@@ -1,0 +1,60 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>testcases.RestAssured_TestCases_PL1.getAllApplicableDoctors<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Multiple applicable doctors must exist
+1. Validate that the response contains list of Doctors
+2. Verify the response status code is 200.
+3. Verify Performer IDs are unique</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.findMatchingPatientTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Matching Patient must exist
+1. Validate that the appointment ID is not null.
+2. Send a GET request to find patient that has same phone number.
+3. Verify the response status code is 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.BookingListTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.DeactivatePharmCountTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a PUT request to fetch whether we are able to deactivate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of status code as 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.AllStockDetailsTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.getAllRegisteredPatientsTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to get all the registered patients
+2. Validate that all the patient IDs are unique.
+3. Verify the response status code is 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.searchPatientTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of all the users that contain the string in their name.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.getAllBillingCounters<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to get all billing counters
+2. Validate that all the counter IDs are unique.
+3. Verify the response status code is 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.MainStoreTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch Main Store from the Pharmacy Settings.
+2. Verify the response status code is 200.
+3. Validate the response has an Id corresponding to the store along with the name and store description.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.ActivatePharmCountTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Pre-conditions: Will require the counter Id and counterName to enter as a qeury paramter in the API. 
+1. Send a PUT request to see whether we are able to activate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of counter Id and counterName</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.PatientConsumptionTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch whether we are able to fetch patient's consumption.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of patient name, patient id.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.PharmacyStoreTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Some Pharmacy Stores must be created already. 
+1. Send a GET request to fetch whether we are able to fetch the pharmacy stores or not.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of name of the store along with Store Id.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.addcurrencyTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Currency code must not already exist
+1. Validate the currency code
+2. Validate created by
+3. Validate created on date
+4. Validate the status code as 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.clashAppointmentTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates the status of clashes in appointment as true or false.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.AdmittedPatientsData<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch a list of currently Admitted Patients Data.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of Patient Admission Id, Admitted Date but Discharged Date must be null</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL1.AppointApplicDeptTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch a list of Appointment Applicable Departments.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of department name, department id, department code</i></td></tr>
+</table>

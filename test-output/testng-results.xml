@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="16" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-11T16:22:21 IST" name="Suite" finished-at="2024-11-11T16:23:54 IST" duration-ms="92806">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases_PL1.createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="createAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllApplicableDoctors()[pri:2, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="getAllApplicableDoctors" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="cancelAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="clashAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="searchPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.BookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="BookingListTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="AllStockDetailsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="MainStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="PharmacyStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="PatientConsumptionTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="DeactivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="AppointApplicDeptTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="addcurrencyTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="findMatchingPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="getAllRegisteredPatientsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="getAllBillingCounters" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="ActivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@101639ae]" name="AdmittedPatientsData" class="testcases.RestAssured_TestCases_PL1"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2024-11-11T16:22:21 IST" name="Test" finished-at="2024-11-11T16:23:54 IST" duration-ms="92806">
+      <class name="testcases.RestAssured_TestCases_PL1">
+        <test-method signature="createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:22 IST" name="createAppointmentTest" description="Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains &#039;Status&#039; as &#039;OK&#039;
+4. Retrieve and validate the Appointment ID from the response" finished-at="2024-11-11T16:22:34 IST" duration-ms="12637" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status should be OK. expected [OK] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status should be OK. expected [OK] but found [Failed]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testcases.RestAssured_TestCases_PL1.createAppointmentTest(RestAssured_TestCases_PL1.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointmentTest -->
+        <test-method signature="getAllApplicableDoctors()[pri:2, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:39 IST" name="getAllApplicableDoctors" description="Precondition: Multiple applicable doctors must exist
+1. Validate that the response contains list of Doctors
+2. Verify the response status code is 200.
+3. Verify Performer IDs are unique" finished-at="2024-11-11T16:22:40 IST" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllApplicableDoctors -->
+        <test-method signature="clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:43 IST" name="clashAppointmentTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates the status of clashes in appointment as true or false." finished-at="2024-11-11T16:22:44 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clashAppointmentTest -->
+        <test-method signature="searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:47 IST" name="searchPatientTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of all the users that contain the string in their name." finished-at="2024-11-11T16:22:48 IST" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPatientTest -->
+        <test-method signature="BookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:52 IST" name="BookingListTest" description="Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time." finished-at="2024-11-11T16:22:53 IST" duration-ms="1400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookingListTest -->
+        <test-method signature="AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:22:56 IST" name="AllStockDetailsTest" description="Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time." finished-at="2024-11-11T16:23:04 IST" duration-ms="7942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllStockDetailsTest -->
+        <test-method signature="MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:08 IST" name="MainStoreTest" description="1. Send a GET request to fetch Main Store from the Pharmacy Settings.
+2. Verify the response status code is 200.
+3. Validate the response has an Id corresponding to the store along with the name and store description." finished-at="2024-11-11T16:23:09 IST" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainStoreTest -->
+        <test-method signature="PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:12 IST" name="PharmacyStoreTest" description="Precondition: Some Pharmacy Stores must be created already. 
+1. Send a GET request to fetch whether we are able to fetch the pharmacy stores or not.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of name of the store along with Store Id." finished-at="2024-11-11T16:23:12 IST" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PharmacyStoreTest -->
+        <test-method signature="PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:15 IST" name="PatientConsumptionTest" description="1. Send a GET request to fetch whether we are able to fetch patient&#039;s consumption.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of patient name, patient id." finished-at="2024-11-11T16:23:16 IST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientConsumptionTest -->
+        <test-method signature="ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:19 IST" name="ActivatePharmCountTest" description="Pre-conditions: Will require the counter Id and counterName to enter as a qeury paramter in the API. 
+1. Send a PUT request to see whether we are able to activate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of counter Id and counterName" finished-at="2024-11-11T16:23:20 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivatePharmCountTest -->
+        <test-method signature="DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:23 IST" name="DeactivatePharmCountTest" description="1. Send a PUT request to fetch whether we are able to deactivate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of status code as 200." finished-at="2024-11-11T16:23:24 IST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeactivatePharmCountTest -->
+        <test-method signature="AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:27 IST" name="AppointApplicDeptTest" description="1. Send a GET request to fetch a list of Appointment Applicable Departments.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of department name, department id, department code" finished-at="2024-11-11T16:23:28 IST" duration-ms="1073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointApplicDeptTest -->
+        <test-method signature="AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:31 IST" name="AdmittedPatientsData" description="1. Send a GET request to fetch a list of currently Admitted Patients Data.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of Patient Admission Id, Admitted Date but Discharged Date must be null" finished-at="2024-11-11T16:23:32 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmittedPatientsData -->
+        <test-method signature="addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:35 IST" name="addcurrencyTest" description="Precondition: Currency code must not already exist
+1. Validate the currency code
+2. Validate created by
+3. Validate created on date
+4. Validate the status code as 200." finished-at="2024-11-11T16:23:36 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcurrencyTest -->
+        <test-method signature="findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:39 IST" name="findMatchingPatientTest" description="Precondition: Matching Patient must exist
+1. Validate that the appointment ID is not null.
+2. Send a GET request to find patient that has same phone number.
+3. Verify the response status code is 200." finished-at="2024-11-11T16:23:40 IST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findMatchingPatientTest -->
+        <test-method signature="getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:43 IST" name="getAllRegisteredPatientsTest" description="1. Send a GET request to get all the registered patients
+2. Validate that all the patient IDs are unique.
+3. Verify the response status code is 200." finished-at="2024-11-11T16:23:44 IST" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllRegisteredPatientsTest -->
+        <test-method signature="getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:47 IST" name="getAllBillingCounters" description="1. Send a GET request to get all billing counters
+2. Validate that all the counter IDs are unique.
+3. Verify the response status code is 200." finished-at="2024-11-11T16:23:48 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBillingCounters -->
+        <test-method signature="cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@101639ae]" started-at="2024-11-11T16:23:51 IST" name="cancelAppointmentTest" description="Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation." finished-at="2024-11-11T16:23:51 IST" depends-on-methods="testcases.RestAssured_TestCases_PL1.createAppointmentTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testcases.RestAssured_TestCases_PL1.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@101639ae depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL1.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@101639ae]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testcases.RestAssured_TestCases_PL1.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@101639ae depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL1.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@101639ae]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointmentTest -->
+      </class> <!-- testcases.RestAssured_TestCases_PL1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
