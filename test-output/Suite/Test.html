@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 16 17:02:37 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>143 seconds (143468 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>PL1 </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.getAllApplicableDoctorsTest()'><b>getAllApplicableDoctorsTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: Multiple applicable doctors must exist
+1. Validate that the response contains list of Doctors
+2. Verify the response status code is 200.
+3. Verify Performer IDs are unique</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.searchPatientTest()'><b>searchPatientTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: Patients must exist in the system.
+1. Search for patients by query string.
+2. Validate response status code and matching results.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.addcurrencyTest()'><b>addcurrencyTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Add a new currency and validate the response.</td>
+<td></td>
+<td>6</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.cancelAppointmentTest()'><b>cancelAppointmentTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.bookingListTest()'><b>bookingListTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: Appointments must be created within the specified date range.
+1. Retrieve appointments for a performer within a date range.
+2. Validate response status code and appointment dates.</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.AppointApplicDeptTest()'><b>AppointApplicDeptTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate the list of appointment applicable departments.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.PatientConsumptionTest()'><b>PatientConsumptionTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate patient consumption details.</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.findMatchingPatientTest()'><b>findMatchingPatientTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Find a patient with matching phone number and validate the response.</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.createAppointmentTest()'><b>createAppointmentTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains 'Status' as 'OK'
+4. Retrieve and validate the Appointment ID from the response</td>
+<td></td>
+<td>23</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.MainStoreTest()'><b>MainStoreTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate the main store details from the pharmacy settings.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.PharmacyStoreTest()'><b>PharmacyStoreTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate the list of pharmacy stores.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.AdmittedPatientsData()'><b>AdmittedPatientsData</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate the list of currently admitted patients.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.clashAppointmentTest()'><b>clashAppointmentTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Precondition: Patients and Doctor must be created successfully.
+1. Validate clashing appointments.
+2. Verify response status code and results.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.DeactivatePharmCountTest()'><b>DeactivatePharmCountTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Deactivate a pharmacy counter and validate the response.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.ActivatePharmCountTest()'><b>ActivatePharmCountTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Activate a pharmacy counter and validate the response.</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.getAllBillingCounters()'><b>getAllBillingCounters</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve all billing counters and validate unique Counter IDs.</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.AllStockDetailsTest()'><b>AllStockDetailsTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve and validate the complete list of stock details.</td>
+<td></td>
+<td>14</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases_PL1.getAllRegisteredPatientsTest()'><b>getAllRegisteredPatientsTest</b><br>Test class: testcases.RestAssured_TestCases_PL1<br>Test method: Retrieve all registered patients and validate unique Patient IDs.</td>
+<td></td>
+<td>6</td>
+<td>testcases.RestAssured_TestCases_PL1@65fe9e33</td></tr>
+</table><p>
+</body>
+</html>

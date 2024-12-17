@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-16T17:02:37 IST" name="Suite" finished-at="2024-12-16T17:05:00 IST" duration-ms="143468">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases_PL1.createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="createAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllApplicableDoctorsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllApplicableDoctorsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="cancelAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="clashAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="searchPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AllStockDetailsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="MainStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="PharmacyStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="PatientConsumptionTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="DeactivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AppointApplicDeptTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="addcurrencyTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="findMatchingPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllRegisteredPatientsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllBillingCounters" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.bookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="bookingListTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="ActivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AdmittedPatientsData" class="testcases.RestAssured_TestCases_PL1"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2024-12-16T17:02:37 IST" name="Test" finished-at="2024-12-16T17:05:00 IST" duration-ms="143468">
+      <class name="testcases.RestAssured_TestCases_PL1">
+        <test-method signature="createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:02:37 IST" name="createAppointmentTest" description="Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains &#039;Status&#039; as &#039;OK&#039;
+4. Retrieve and validate the Appointment ID from the response" finished-at="2024-12-16T17:03:01 IST" duration-ms="23452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointmentTest -->
+        <test-method signature="getAllApplicableDoctorsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:07 IST" name="getAllApplicableDoctorsTest" description="Precondition: Multiple applicable doctors must exist
+1. Validate that the response contains list of Doctors
+2. Verify the response status code is 200.
+3. Verify Performer IDs are unique" finished-at="2024-12-16T17:03:10 IST" duration-ms="2314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllApplicableDoctorsTest -->
+        <test-method signature="clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:13 IST" name="clashAppointmentTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Validate clashing appointments.
+2. Verify response status code and results." finished-at="2024-12-16T17:03:14 IST" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clashAppointmentTest -->
+        <test-method signature="searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:18 IST" name="searchPatientTest" description="Precondition: Patients must exist in the system.
+1. Search for patients by query string.
+2. Validate response status code and matching results." finished-at="2024-12-16T17:03:19 IST" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPatientTest -->
+        <test-method signature="bookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:23 IST" name="bookingListTest" description="Precondition: Appointments must be created within the specified date range.
+1. Retrieve appointments for a performer within a date range.
+2. Validate response status code and appointment dates." finished-at="2024-12-16T17:03:25 IST" duration-ms="2862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingListTest -->
+        <test-method signature="AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:29 IST" name="AllStockDetailsTest" description="Retrieve and validate the complete list of stock details." finished-at="2024-12-16T17:03:43 IST" duration-ms="14098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllStockDetailsTest -->
+        <test-method signature="MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:47 IST" name="MainStoreTest" description="Retrieve and validate the main store details from the pharmacy settings." finished-at="2024-12-16T17:03:49 IST" duration-ms="1990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainStoreTest -->
+        <test-method signature="PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:52 IST" name="PharmacyStoreTest" description="Retrieve and validate the list of pharmacy stores." finished-at="2024-12-16T17:03:54 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PharmacyStoreTest -->
+        <test-method signature="PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:03:57 IST" name="PatientConsumptionTest" description="Retrieve and validate patient consumption details." finished-at="2024-12-16T17:04:00 IST" duration-ms="2414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientConsumptionTest -->
+        <test-method signature="ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:03 IST" name="ActivatePharmCountTest" description="Activate a pharmacy counter and validate the response." finished-at="2024-12-16T17:04:06 IST" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivatePharmCountTest -->
+        <test-method signature="DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:09 IST" name="DeactivatePharmCountTest" description="Deactivate a pharmacy counter and validate the response." finished-at="2024-12-16T17:04:11 IST" duration-ms="1583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeactivatePharmCountTest -->
+        <test-method signature="AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:14 IST" name="AppointApplicDeptTest" description="Retrieve and validate the list of appointment applicable departments." finished-at="2024-12-16T17:04:16 IST" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointApplicDeptTest -->
+        <test-method signature="AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:19 IST" name="AdmittedPatientsData" description="Retrieve and validate the list of currently admitted patients." finished-at="2024-12-16T17:04:21 IST" duration-ms="1868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmittedPatientsData -->
+        <test-method signature="addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:24 IST" name="addcurrencyTest" description="Add a new currency and validate the response." finished-at="2024-12-16T17:04:31 IST" duration-ms="6700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcurrencyTest -->
+        <test-method signature="findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:35 IST" name="findMatchingPatientTest" description="Find a patient with matching phone number and validate the response." finished-at="2024-12-16T17:04:37 IST" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findMatchingPatientTest -->
+        <test-method signature="getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:40 IST" name="getAllRegisteredPatientsTest" description="Retrieve all registered patients and validate unique Patient IDs." finished-at="2024-12-16T17:04:47 IST" duration-ms="6442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllRegisteredPatientsTest -->
+        <test-method signature="getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:50 IST" name="getAllBillingCounters" description="Retrieve all billing counters and validate unique Counter IDs." finished-at="2024-12-16T17:04:52 IST" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBillingCounters -->
+        <test-method signature="cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T17:04:55 IST" name="cancelAppointmentTest" description="Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation." finished-at="2024-12-16T17:04:57 IST" depends-on-methods="testcases.RestAssured_TestCases_PL1.createAppointmentTest" duration-ms="1775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointmentTest -->
+      </class> <!-- testcases.RestAssured_TestCases_PL1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
